@@ -9,7 +9,7 @@ This repository contains the module for a Vault on the [Aptos Network](https://a
 
 The module lets users deposit their coins safely into a Vault and then withdraw then at a later point when needed. The module creates a new Vault for each user for each type of coin. Users can only deposit and withdraw from their own Vaults. Dposits and Withdrawls from the Vaults can be paused by the Admin.
 
-> ⚠️ Publisher of the module is the Admin
+> ⚠️ Publisher of the module is the Admin and must be the same as DuckyVault
 
 ## Usage ⚙️
 
