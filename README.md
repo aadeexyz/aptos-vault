@@ -3,7 +3,7 @@
 [![Twitter](https://custom-icon-badges.demolab.com/badge/-Follow-blue?style=for-the-badge&logoColor=white&logo=twitter)](https://twitter.com/AadeePatil)
 [![GitHub](https://custom-icon-badges.demolab.com/badge/-Follow-orange?style=for-the-badge&logoColor=white&logo=github)](https://github.com/AadeePatil)
 
-This repository contains the core module for a Vault on the [Aptos Network](https://aptoslabs.com/).
+This repository contains the module for a Vault on the [Aptos Network](https://aptoslabs.com/).
 
 ## Overview 👀
 
