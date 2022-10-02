@@ -565,7 +565,7 @@ module DuckyVault::vault {
 
     #[test(ducky = @DuckyVault, user = @0x3)]
     #[expected_failure(abort_code = 393218)]
-    fun test_should_abort_if_trying_to_withdraw_without_depositing(
+    fun test_should_abort_if_vault_does_not_exist(
         ducky: signer,
         user: signer
     ) acquires VaultsInfo, VaultsHolder {
