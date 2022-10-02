@@ -30,7 +30,7 @@ public entry fun deposit<CoinType>(
 
 ### Withdraw 💸
 
-The `withdraw<CoinType>(account: &signer, amount: u64)` function can be called to withdraw coins into the vault.
+The `withdraw<CoinType>(account: &signer, amount: u64)` function can be called to withdraw coins from the vault.
 
 It takes the `reference to signer` of the account that want's to withdraw and `amount` they want to withdraw as it's parameters.
 
