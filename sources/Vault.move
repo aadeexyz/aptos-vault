@@ -107,7 +107,10 @@ module DuckyVault::vault {
     /// @custom:type-param Type of the Coin the user wants to deposit
     /// @param Immutable reference to the signer of the account that want's to deposit
     /// @param Amount of coins the user wants to deposit
-    public entry fun deposit<CoinType>(account: &signer, amount: u64) acquires VaultsInfo, VaultsHolder {
+    public entry fun deposit<CoinType>(
+        account: &signer,
+        amount: u64
+    ) acquires VaultsInfo, VaultsHolder {
         assert!(amount > 0, error::invalid_argument(ECANNOT_BE_ZERO));
         let coin = coin::withdraw<CoinType>(account, amount);
         assert!(!paused(), error::permission_denied(EVAULTS_PAUSED));
@@ -137,7 +140,10 @@ module DuckyVault::vault {
     /// @custom:type-param Type of the Coin the user wants to withdraw
     /// @param Immutable reference to the signer of the account that want's to withdraw
     /// @param Amount of coins the user wants to withdraw
-    public entry fun withdraw<CoinType>(account: &signer, amount: u64) acquires VaultsInfo, VaultsHolder {
+    public entry fun withdraw<CoinType>(
+        account: &signer,
+        amount: u64
+    ) acquires VaultsInfo, VaultsHolder {
         assert!(amount > 0, error::invalid_argument(ECANNOT_BE_ZERO));
         assert!(!paused(), error::permission_denied(EVAULTS_PAUSED));
 
