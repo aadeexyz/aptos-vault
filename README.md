@@ -17,7 +17,7 @@ The module lets users deposit their coins safely into a Vault and then withdraw 
 
 The `deposit<CoinType>(account: &signer, amount: u64)` function can be called to deposit coins into the vault.
 
-It takes the `reference to signer` of the account that want's deposit and `amount` they want to deposit as it's parameters.
+It takes the `reference to signer` of the account that want's to deposit and `amount` they want to deposit as it's parameters.
 
 The function will `abort` if the user doesn't have enough Coins in their account.
 
@@ -32,9 +32,9 @@ public entry fun deposit<CoinType>(
 
 The `withdraw<CoinType>(account: &signer, amount: u64)` function can be called to withdraw coins into the vault.
 
-It takes the `reference to signer` of the account that want's deposit and `amount` they want to withdraw as it's parameters.
+It takes the `reference to signer` of the account that want's to withdraw and `amount` they want to withdraw as it's parameters.
 
-The function will `abort` if the Vault doesn't exist or user doesn't have enough Coins in their account.
+The function will `abort` if the Vault doesn't exist or user doesn't have enough Coins in their vault.
 
 ```move
 public entry fun withdraw<CoinType>(
@@ -45,7 +45,7 @@ public entry fun withdraw<CoinType>(
 
 ### Pause ⏸️
 
-The `pause(account: &signer)` function can be called by the owner of the module to  pause deposits and withdrawals for all Vaults.
+The `pause(account: &signer)` function can be called by the owner of the module to pause deposits and withdrawals for all Vaults.
 
 It takes the `reference to signer` as it's parameters. The signer must be the Admin.
 
@@ -57,7 +57,7 @@ public entry fun pause(account: &signer) acquires VaultsInfo
 
 ### Unpause ▶️
 
-The `unpause(account: &signer)` function can be called by the owner of the module to  unpause deposits and withdrawals for all Vaults.
+The `unpause(account: &signer)` function can be called by the owner of the module to unpause deposits and withdrawals for all Vaults.
 
 It takes the `reference to signer` as it's parameters. The signer must be the Admin.
 
